@@ -1,5 +1,1 @@
-# LLSimpute-python
-Missing gene expression imputation with LLSimpute algorithm
-
-
-주석은 한국어로 처리되어 있음.
+# pyLLS: a Python library for missing gene value imputation using local least square algorithm.
