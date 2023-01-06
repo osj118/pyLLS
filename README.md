@@ -3,10 +3,10 @@
 # pyLLS
 ### a Python library for missing gene value imputation using local least square algorithm
 
-The Local Least Square (LLS) algorithm is an algorithm that is particularly effective at imputing missing values.
+The Local Least Square (LLS) algorithm is an algorithm that is particularly effective at imputing missing values.<br>
 We developed pyLLS by implementing the LLS into python framework.<br>
-Our pyLLS offers more options and is significantly faster than LLS in R.
-pyLLS is subjected to the MIT License, which guarantees free and commercial use for industry as well as the research community.
+Our pyLLS offers more options and is significantly faster than LLS in R.<br>
+pyLLS is subjected to the MIT License, which guarantees free and commercial use for industry as well as the research community.<br>
 
 Please report bugs to Sejin Oh, at <agicic@naver.com> or at
 <https://github.com/osj118/pyLLS/issues>.
