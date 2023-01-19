@@ -1,5 +1,3 @@
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # pyLLS
 ### a Python library for missing gene value imputation using local least square algorithm
 
