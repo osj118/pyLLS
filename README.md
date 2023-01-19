@@ -23,14 +23,12 @@ pip install pyLLS
 ## Example
 
 This is basic example:
+If you run 'impute_missing_gene()' without any data,<br>
+it will return its description.
 
 ``` r
 import pyLLS
 pyLLS.impute_missing_gene()
-```
-
-This will show description of the function.
-``` r
 >>> pyLLS.impute_missing_gene()
 
             This function estimates missing values of the specified target probes.
@@ -52,14 +50,7 @@ This will show description of the function.
             matrix shape will be (n x k).
             * mgcp : missing gene correlative probes. If useKneedle == True, mgcp will have R2-square column.
             # tutorial
-            import pandas as pd
-            import numpy as np
-            import random
-            tmp=pd.DataFrame(np.array(random.sample(range(1000),1000)).reshape(100,10))
-            tmp.index=['g'+str(i) for i in tmp.index]
-            tmp.columns=['s'+str(i) for i in tmp.columns]
-            tmp2=tmp.iloc[:90,:5]
-            tmp3=pyLLS.impute_missing_gene(ref=tmp,target=tmp2)
+            <------omit-------->
 ```
 
 ## Parameters
