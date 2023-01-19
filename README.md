@@ -42,7 +42,7 @@ pyLLS.impute_missing_gene()
             verbose : If True, progress is reported. Otherwise, no progress is reported.
             n_jobs : Use all threads ('all') or speicified number of threads (int)
             addK = Intenger that added to Kneedle's K to prevent underfitting.
-                   This will use K+addK probes to estimate missing values of a gene.
+                   This will use K+addK probes to estimate missing values of a gene. (default=1)
             return_probes = if true, 'target-table and mgcp' will be returned else 'target' will be returned.
             # Return
             * target : table with estimated values of missing genes that are not present in original target table.
@@ -73,20 +73,18 @@ return_probes = if true, 'target-table and mgcp' will be returned else 'target' 
             matrix shape will be (n x k).
 * mgcp : missing gene correlative probes. If useKneedle == True, mgcp will have R2-square column.
 ```
-<img src="man/figures/README-parameters-1.png" width="100%" />
 
+## Tutorial
+You can simply run the following tutorial codes.
 ``` r
-to be described
+import pyLLS
+import pandas as pd
+import numpy as np
+import random
+tmp=pd.DataFrame(np.array(random.sample(range(1000),1000)).reshape(100,10))
+tmp.index=['g'+str(i) for i in tmp.index]
+tmp.columns=['s'+str(i) for i in tmp.columns]
+tmp2=tmp.iloc[:90,:5]
+tmp3=pyLLS.impute_missing_gene(ref=tmp,target=tmp2)
 ```
-
-<img src="man/figures/README-parameters-2.png" width="100%" />
-
-## Sensitivity
-
-to be described
-
-``` r
-to be described
-```
-
-<img src="man/figures/README-sensitivity-1.png" width="100%" />
+If you want experience more sophisticated tutorial,<br>please refer the notebook.
