@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyLLS
+Version: 0.2
+Summary: Missing value imputation with the local least square algorithm in python
+Home-page: https://github.com/osj118/pyLLS
+Author: Sejin Oh
+Author-email: Sejin Oh <agicic@naver.com>
+Maintainer: Sejin Oh
+License: MIT License
+Project-URL: Homepage, https://github.com/osj118/pyLLS
+Keywords: missing value imputation,local least square
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyLLS
+### a Python library for missing gene value imputation using local least square algorithm
+
+One algorithm that is particularly effective at imputing missing values is the Local Least Square (LLS) algorithm.<br>
+We introduce our pyLLS by implementing the LLS into python framework.<br>
+Our pyLLS offers more options and is significantly faster than LLS in R.
+
+Please report bugs to Sejin Oh, at <agicic@naver.com> or at <https://github.com/osj118/pyLLS/issues>.
