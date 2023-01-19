@@ -18,6 +18,12 @@ You can install the pyLLS from
 pip install pyLLS
 ```
 
+You can also install it with github.
+``` r
+git clone https://github.com/osj118/pyLLS.git && cd pyLLS
+pip install .
+```
+
 ## Example
 
 If you run 'impute_missing_gene()' without any data,<br>
